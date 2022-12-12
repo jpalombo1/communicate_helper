@@ -1,4 +1,5 @@
-from constants import MAX_ROWS, MAX_COLS, EMPTY, ALPHABET
+from communicate.constants import ALPHABET, EMPTY, MAX_COLS, MAX_ROWS
+
 
 def make_grid(
     num_rows: int = MAX_ROWS, num_cols: int = MAX_COLS, letters: list[str] = ALPHABET

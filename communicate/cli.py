@@ -1,8 +1,19 @@
-
-from communicator import Communicator
 from dataclasses import dataclass
-from letter_choice import LetterChoice
-from constants import GRID_PROMPT
+
+from communicate.communicator import Communicator
+from communicate.constants import (
+    BLANK,
+    GRID_PROMPT,
+    GRIDPOINT_PROMPT,
+    MAX_SUGGESTIONS,
+    POINT_PROMPT,
+)
+from communicate.letter_choice import LetterChoice
+
+# CLI VALUES
+CLI_DONE: str = "d"
+CLI_NEXT: str = "n"
+
 
 @dataclass
 class CLI:

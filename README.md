@@ -21,5 +21,9 @@ Use grid of letters, then option to reduce grid with only letters of valid words
 
 Also use nltk word library for most common english words and letters given name substring thus far, and can sort letters by common occurance and filter out invalid letters to make word if so choose. Also allow entry of autocomplete siggestions.
 
-## Installation
-PreReqs: install python3, python3-pip, python3-tk, python3-venv. pip install nltk.
+## Installation and Usage
+PreReqs: install python3, python3-pip, python3-tk, python3-venv. 
+
+Install Package: `pip install -e .`
+
+Run with: `python main.py`

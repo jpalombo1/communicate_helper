@@ -1,9 +1,16 @@
-from __future__ import annotations
-
 import math
 from dataclasses import dataclass
-from constants import MAX_COLS, MAX_ROWS, EMPTY, POSSIBLE_WORDS, ALPHABET, SORT_LETTERS
-from make_grid import make_grid
+
+from communicate.constants import (
+    ALPHABET,
+    EMPTY,
+    MAX_COLS,
+    MAX_ROWS,
+    POSSIBLE_WORDS,
+    SORT_LETTERS,
+)
+from communicate.make_grid import make_grid
+
 
 @dataclass
 class Communicator:
@@ -11,7 +18,7 @@ class Communicator:
     smart: bool = False
     include_empty: bool = True
 
-    def __post_init__(self):
+    def __post_init__(self) -> None:
         """Creates editable grid object."""
         self.total_frequency_map: dict[str, int] = self.frequency_map()
         self.reset_grid()

@@ -1,5 +1,6 @@
 from enum import Enum, auto
 
+
 class LetterChoice(Enum):
     """Ways to make letter choices."""
 
